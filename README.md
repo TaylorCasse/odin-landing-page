@@ -1,0 +1,1 @@
+A simple project to design a landing page from scratch using a reference image (see references directory). 
