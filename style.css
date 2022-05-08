@@ -1,5 +1,110 @@
+/* General */
 * {
     box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    border: blue 2px solid;
+}
+
+.done {
     margin: 0;
     padding: 0;
+    border: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header, .main-1, .main-2, .main-3, .main-4 {
+    display: flex;
+    flex: auto;
+    padding: 50px 100px;
+
+}
+
+.header, .main-1, .footer {
+    background: #1F2937;
+}
+
+
+
+
+/* Header Style */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+}
+
+.header *, .main-1 * {
+    color: white;
+}
+
+/* Main Segment Style */
+
+/* Main 1 */
+.main-1 div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.main-1 div button {
+    background: #3b82f6;
+}
+
+#image-placeholder {
+    justify-content: center;
+    align-items: center;
+    background: #6d747d;
+}
+
+/* Main 2 */
+.main-2 {
+    flex-direction: column;
+}
+
+.main-2 h2 {
+    text-align: center;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex: auto;
+}
+
+.box-main {
+    height: 250px;
+    width: 200px;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    /* height: 100px; */
+    /* width: 40px; */
+    /* flex: 1; */
+}
+
+.box-child {
+    height: 200px;
+    flex: 1 1 auto;
+}
+
+.box-subtext {
+    text-align: center;
+}
+
+/* Main 3 */
+.main-3 {
+    background: #e5e7eb;
+    /* font-family: ; */
 }
