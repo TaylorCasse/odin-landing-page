@@ -33,8 +33,17 @@ html {
     display: flex;
     flex: 0 1 auto;
     padding: 50px 200px;
+    justify-content: center;
+    align-items: center;
     /* max-width: 2000px; */
 
+}
+
+.child-1, .child-2, .child-3, .child-4 {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    max-width: 1500px;
 }
 
 .header, .main-1, .footer {
@@ -45,14 +54,41 @@ a {
     text-decoration: none;
 }
 
+button {
+    background: #3b82f6;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    padding: 10px;
+    border: 2px solid white;
+    font-weight: bold;
+}
+
+
 /* Header Style */
 .header {
     display: flex;
-    flex: 0 1 auto;
+    justify-content: center;
+    /* padding: 10px 200px; */
+    flex: 1;
+    height: 100px;
+
+}
+
+.header-child {
+    display: flex;
+    flex: 1 1 0;
     justify-content: space-between;
-    padding: 10px 200px;
+    align-items: center;
+    max-width: 1500px;
+    height: 100px;
+
     /* max-width: 2000px; */
 }
+
+/* .flex-divider {
+    flex: 1;
+} */
 
 .header ul {
     display: flex;
@@ -72,6 +108,7 @@ a {
     font-size: 24px;
     color: #F9FAF8;
     align-items: center;
+    font-weight: bold;
 }
 
 /* Main Segment Style */
@@ -79,12 +116,7 @@ a {
 /* Main 1 */
 .main-1 {
     gap: 20px;
-}
-
-.main-1 div {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+    justify-content: center;
 }
 
 .main-1 div * {
@@ -96,13 +128,16 @@ a {
     margin: 0;
 }
 
-button {
-    background: #3b82f6;
-    color: white;
-    border-radius: 5px;
-    width: 100px;
-    padding: 10px;
-    border: 2px solid white;
+.child-1 {
+    flex-direction: row;
+    gap: 20px;
+    max-width: 1500px;
+}
+
+.child-1 div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 #image-placeholder {
@@ -114,20 +149,18 @@ button {
 /* Main 2 */
 .main-2 {
     flex-direction: column;
-
 }
 
 .main-2 h2 {
     text-align: center;
     margin-bottom: 50px;
-
 }
 
 .box-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    flex: auto;
+    flex: 1;
     gap: 20px;
 }
 
@@ -167,7 +200,7 @@ button {
 
 /* Main 4 */
 
-.blue-background {
+.child-4 {
     background: #3882F6;
     flex: auto;
     border-radius: 5px;
